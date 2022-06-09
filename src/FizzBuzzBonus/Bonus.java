@@ -7,7 +7,9 @@ public class Bonus {
 	public static void main(String[] args) {
 		// consegna bonus
 		/*chiediamo all’utente di dirci fino a quale numero dobbiamo giocare, 
-		 * purché quel numero sia maggiore di 1 e minore di 200.*/
+		 * purché quel numero sia maggiore di 1 e minore di 200.
+		 * chiedere il numero al giocator e non chiudere il ciclo fino a 
+		 * che il giocatore non inserisce un numero valido*/
 		
 		
 		Scanner scan = new Scanner(System.in);
@@ -26,7 +28,8 @@ public class Bonus {
 				System.out.println("Riprova, il numero selezionato deve essere compreso tra 1 e 200");
 			}
 		}
-			
+		System.out.println("Iniziamo: ");
+		
 		for (int i = 1; i <= numero; i++) {
 				
 				if (i % 3 == 0 && i % 5 == 0) {
